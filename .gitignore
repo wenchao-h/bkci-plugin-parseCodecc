@@ -1,0 +1,4 @@
+dist/
+*_release/
+*.zip
+*.egg*

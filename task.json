@@ -1,0 +1,35 @@
+{
+    "atomCode": "parseCodecc",
+    "execution": {
+        "packagePath": "parseCodecc-1.0.0.tar.gz",
+        "language": "python",
+        "demands": [
+            "pip install parseCodecc-1.0.0.tar.gz"
+        ],
+        "target": "parseCodecc"
+    },
+    "input": {
+        "local_path": {
+            "label":"local path",
+            "default":"./${BK_CI_BUILD_ID}/",
+            "placeholder":"./${BK_CI_BUILD_ID}/",
+            "type":"vuex-input",
+            "desc":"codecc json文件存放路径",
+            "required": true
+        }
+    },
+    "output": {
+        "total_serious":{
+            "type": "string",
+            "description": "严重问题数量"
+        },
+        "total_normal":{
+            "type": "string",
+            "description":"一般问题数量"
+        },
+        "total_prompt": {
+            "type": "string",
+            "description": "提示问题数量"
+        }
+    }
+}
